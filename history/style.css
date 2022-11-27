@@ -25,7 +25,57 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(192,192,192);
     text-decoration: none;
     font-size: 1.25rem;
+    transition: all 0.25s ease;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+main{
+    width: 100%;
+    display: flex;
+}
+
+section.left,
+section.right{
+    padding: 1.5rem;
+}
+section.right h4{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+section.left{
+    flex: 4 1 550px;
+}
+
+section.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 250px;
+}
+
+section.right.p{
+    margin: 1rem 0rem;
+}
+.active{
+    color: white;
+}
+
+/*nav bar 縮小後改成直式顯示
+* @media 可用來設定RWD時需要參考的css
+*/
+@media screen and (max-width: 625px){
+    nav ul{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px){
+
 }
