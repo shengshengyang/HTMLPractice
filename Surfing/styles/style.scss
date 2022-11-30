@@ -2,18 +2,36 @@
   font-family: 'Zen Antique Soft', serif;
 }
 
+body{
+  margin-left: 0;
+  margin-top: 0;
+}
 
 header{
-
+  margin-top: 0;
   display: flex;
   div.logo{
     display: flex;
+    align-items: center;
+    flex: 5 1 400px;
     img{
       width: 6vw;
       height: 6vw;
     }
   }
   nav{
-
+    flex: 2 1 400px;
+    ul{
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      li{
+        a{
+          color: #09777D;
+          text-decoration: none;
+          font-size: 1.25rem;
+        }
+      }
+    }
   }
 }
