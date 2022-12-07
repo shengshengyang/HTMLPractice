@@ -10,10 +10,12 @@ body{
 header{
   margin-top: 0;
   display: flex;
+  flex-wrap: wrap;
   div.logo{
     display: flex;
     align-items: center;
     flex: 5 1 400px;
+    margin-left: 2rem;
     img{
       width: 6vw;
       height: 6vw;
@@ -29,8 +31,20 @@ header{
         a{
           color: #09777D;
           text-decoration: none;
-          font-size: 1.25rem;
+          font-size: 1.35rem;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px){
+  header{
+    div.logo{
+      margin-left: 0.5rem;
+      img{
+        width: 15vw;
+        height: 15vw;
       }
     }
   }
